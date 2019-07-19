@@ -1,0 +1,16 @@
+server:
+  port: 8082   
+#tomcat端口控制
+  
+spring:
+  profiles:
+    active: dev
+my:
+  name: forezp
+  age: 12
+  number:  ${random.int}
+  uuid : ${random.uuid}
+  max: ${random.int(10)}
+  value: ${random.value}
+  greeting: hi,i'm  ${my.name}
+  
